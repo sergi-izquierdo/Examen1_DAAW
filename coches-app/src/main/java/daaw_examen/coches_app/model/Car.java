@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 @Document(collection = "cars")
-public class Cars {
+public class Car {
     @Id
     private String id;
 
@@ -18,9 +18,9 @@ public class Cars {
 
     // Constructores, Getters y Setters
 
-    public Cars() {}
+    public Car() {}
 
-    public Cars(String plate, Integer year){
+    public Car(String plate, Integer year){
         this.plate = plate;
         this.year = year;
     }
